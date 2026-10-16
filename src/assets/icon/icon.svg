@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- App Background (Dark Grey Squircle) -->
+  <rect width="512" height="512" rx="112" fill="#121212" />
+  
+  <!-- Subtle Background Glow / Accent Circle -->
+  <circle cx="256" cy="256" r="160" fill="#9C27B0" opacity="0.08" />
+
+  <!-- Dotted Location Path Trail -->
+  <path d="M 160 360 C 200 320, 200 240, 240 220 C 280 200, 310 180, 330 140" 
+        fill="none" 
+        stroke="#BA68C8" 
+        stroke-width="8" 
+        stroke-dasharray="12 12" 
+        stroke-linecap="round" 
+        opacity="0.5" />
+
+  <!-- Start Point Dot -->
+  <circle cx="160" cy="360" r="12" fill="#4CAF50" />
+
+  <!-- Main Pretty Purple Location Pin -->
+  <g transform="translate(0, -10)">
+    <!-- Pin Shadow -->
+    <ellipse cx="256" cy="350" rx="24" ry="8" fill="#000000" opacity="0.4" />
+    
+    <!-- Pin Body -->
+    <path d="M 256 120 
+             C 210 120, 174 156, 174 202 
+             C 174 262, 256 342, 256 342 
+             C 256 342, 338 262, 338 202 
+             C 338 156, 302 120, 256 120 Z" 
+          fill="url(#purpleGradient)" />
+          
+    <!-- Pin Inner Circle Cutout -->
+    <circle cx="256" cy="202" r="42" fill="#121212" />
+    
+    <!-- Center Point Dot inside Pin -->
+    <circle cx="256" cy="202" r="18" fill="#E1BEE7" />
+  </g>
+
+  <!-- SVG Gradients -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CE93D8" />
+      <stop offset="100%" stop-color="#7B1FA2" />
+    </linearGradient>
+  </defs>
+</svg>
